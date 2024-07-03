@@ -1,22 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
-    <title>Coding Assesment L2 boilerplate</title>
-
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Product Details</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/265477897f.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+    <div class="product-details">
+        <div class="product-images">
+            <img id="main-image" src="" alt="Product Image">
+            <div class="thumbnails" id="thumbnails"></div>
+        </div>
+        <div class="product-info">
+            <div class="vendor" id="vendor"></div>
+            <h1 class="title" id="title"></h1>
+            <hr/>
+            <div class="price-info">
+                <div>
+                    <span class="price" id="price"></span>
+                    <span class="compare-at-price" id="compare-at-price"></span>
+                </div>
+                <span class="percentage-off" id="percentage-off"></span>
+            </div>
+            <hr/>
+            <div class="selectors">
+                <div class="color-selector">
+                    <h1>Choose a Color</h1>
+                    <div id="color"></div>
+                </div>
+                <hr/>
+                <div class="size-selector">
+                    <h1>Choose a Size</h1>
+                    <div id="size"></div>
+                    <hr/>
+                </div>
+               
+                <div class="quantity-add-to-cart-container">
+                    <div class="quantity-selector">
+                        <button id="decrease-quantity">-</button>
+                        <span id="quantity">1</span>
+                        <button id="increase-quantity">+</button>
+                    </div>
+                    <button class="add-to-cart" id="add-to-cart">
+                        <i class="fas fa-shopping-bag icon"></i>  Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hide-cart-message" id="cart-message"></div>
+            <hr/>
+            <div class="description" id="description"></div>
+        </div>
     </div>
-    <!-- Happy coding 😊 -->
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
